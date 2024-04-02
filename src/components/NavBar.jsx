@@ -1,12 +1,10 @@
-import React from "react";
 import { Stack } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import { logo } from "../utils/constants";
-import { Search } from "@mui/icons-material";
-import SearchBar from "./SearchBar";
+import { SearchBar } from "./";
 
-const NavBar = () => (
+const Navbar = () => (
   <Stack
     direction="row"
     alignItems="center"
@@ -21,8 +19,8 @@ const NavBar = () => (
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
     </Link>
-    <SearchBar /> 
+    <SearchBar />
   </Stack>
 );
 
-export default NavBar;
+export default Navbar;
